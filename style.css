@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    color: black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+
+}
+.Section{
+    height: 550px;
+    width: 450px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+    padding: 30px 50px;
+    position: relative;
+
+}
+
+.Section #Text{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .4);
+    background: transparent;
+    padding: 0 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .7);
+}
+input::placeholder{
+    color: rgba(255, 255, 255, .7);
+}
+.Section li{
+    position: relative;
+    height: 50px;
+    width: 90%;
+    background: #00ff00;
+    border: 2px solid #00ff00;
+    margin: 15px 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center ;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.Section li.active{
+    background: #333;
+    border: 2px solid rgba(255, 255, 255, .7);
+    text-transform: capitalize;
+    color: #eee;
+    cursor: pointer;
+}
+.Section p{
+position: absolute;
+right: -60;
+background: #f00;
+border-radius: 5px;
+width: 50px;
+height: 50px;
+
+}
+
+.Section p i{
+    cursor: pointer;
+    color: #eee;
+    font-size: 50px;
+
+}
+.List{
+    height: 370px;
+    position: relative;
+    margin-top: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 40px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, .4);
+}
+::-webkit-scrollbar{
+    width: 5px;
+
+}
+::-webkit-scrollbar-thumb{
+    background: #eee;
+}
